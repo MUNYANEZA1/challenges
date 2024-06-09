@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Card with Navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-item" onclick="showSection('intro')">Intro</div>
+  <div class="navbar-item" onclick="showSection('gallery1')">Gallery 01</div>
+
+  <div class="navbar-item" onmouseover="highlightImage('gallery1', 0)" onmouseout="removeHighlight('gallery1', 0)">Image Interaction 1</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery1', 1)" onmouseout="removeHighlight('gallery1', 1)">Image Interaction 2</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery1', 2)" onmouseout="removeHighlight('gallery1', 2)">Image Interaction 3</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery1', 3)" onmouseout="removeHighlight('gallery1', 3)">Image Interaction 4</div>
+  <div class="navbar-item" onclick="showSection('gallery3')">Gallery 03</div>
+  
+  <div class="navbar-item" onmouseover="highlightImage('gallery3', 0)" onmouseout="removeHighlight('gallery3', 0)">Image Interaction 5</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery3', 1)" onmouseout="removeHighlight('gallery3', 1)">Image Interaction 6</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery3', 2)" onmouseout="removeHighlight('gallery3', 2)">Image Interaction 7</div>
+  <div class="navbar-item" onmouseover="highlightImage('gallery3', 3)" onmouseout="removeHighlight('gallery3', 3)">Image Interaction 8</div>
+</div>
+<div class="main-content" id="card-container">
+  <div class="card" id="intro-section">
+    <h2>Intro</h2>
+    <p>The designs represent both desktop and mobile view.<br>To view Interactions:<br>Run the designs in prototype mode.</p>
+  </div>
+  <div class="card" id="gallery1-section">
+    <h2>Gallery 01</h2>
+    <div class="gallery" id="gallery1">
+        <img src="photo/image1.jpeg" alt="FENNEC FOX">
+        <img src="photo/image2.jpeg" alt="HUMPBACK WHALE">
+        <img src="photo/image3.jpeg" alt="COMMON BROWN BABOON">
+        <img src="photo/image4.jpeg" alt="SPOTTED DEER">
+    </div>
+  </div>
+  <div class="card" id="gallery3-section">
+    <h2>Gallery 03</h2>
+    <div class="gallery" id="gallery3">
+      <img src="photo/image1.jpeg" alt="FENNEC FOX">
+      <img src="photo/image2.jpeg" alt="HUMPBACK WHALE">
+      <img src="photo/image3.jpeg" alt="COMMON BROWN BABOON">
+      <img src="photo/image4.jpeg" alt="SPOTTED DEER">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
